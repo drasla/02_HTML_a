@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th,
+        td {
+            border: 1px solid #94a3b8;
+            padding: 6px 16px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<!--
+         ┌──────┬──────┬──────┬──────┐
+         │ 셀1  │ 셀2  │ 셀3  │ 셀4  │
+         ├──────┼──────┴──────┼──────┤
+         │ 셀5  │  colspan="2"│ 셀8  │
+         ├──────┼──────┬──────┼──────┤
+         │ 셀9  │       │ 셀11 │ 셀12 │
+         ├──────┤rowspan│──────┼──────┤
+         │ 셀13 │ ="2" │ 셀15  │ 셀16 │
+         └──────┴──────┴──────┴──────┘
+-->
+<table>
+    <!-- 1행 -->
+    <tr>
+        <td>셀1</td>
+        <td>셀2</td>
+        <td>셀3</td>
+        <td>셀4</td>
+    </tr>
+
+    <!-- 2행 -->
+    <tr>
+        <td>셀5</td>
+        <td colspan="2">colspan="2" 영역</td>
+        <td>셀8</td>
+    </tr>
+
+    <!-- 3행 -->
+    <tr>
+        <td>셀9</td>
+        <td rowspan="2">rowspan="2" 영역</td>
+        <td>셀11</td>
+        <td>셀12</td>
+    </tr>
+
+    <!-- 4행 -->
+    <tr>
+        <td>셀13</td>
+        <td>셀15</td>
+        <td>셀16</td>
+    </tr>
+</table>
+</body>
+</html>
